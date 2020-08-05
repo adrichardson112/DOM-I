@@ -73,3 +73,10 @@ nav.prepend(newNavElement2);
 //Update the CTA content
 const ctaItems = document.querySelector('.cta-text');
 ctaItems.textContent = siteContent.cta["h1"];
+
+const ctaButton = document.querySelector('.cta button');
+ctaButton.textContent = siteContent.cta["button"];
+
+const ctaImg = document.querySelector('cta-img');
+ctaImg.src = siteContent.cta["img-src"];
+ctaImg.alt = "Code Snippet Image";
