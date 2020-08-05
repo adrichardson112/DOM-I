@@ -40,3 +40,36 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// Update the nav content
+const navItems = document.querySelectorAll('nav a');
+navItems[0].textContent = siteContent.nav["nav-item-1"];
+navItems[1].textContent = siteContent.nav["nav-item-2"];
+navItems[2].textContent = siteContent.nav["nav-item-3"];
+navItems[3].textContent = siteContent.nav["nav-item-4"];
+navItems[4].textContent = siteContent.nav["nav-item-5"];
+navItems[5].textContent = siteContent.nav["nav-item-6"];
+
+//Add two new elements to nav and change color
+constnavTitles = document.querySelectorAll("header nav a");
+navTitles.forEach((a) => {
+  value.style.color = 'green';
+});
+
+const nav = document.querySelector("nav");
+
+const newNavElement = document.createElement("a");
+newNavElement.textContent = "Samples";
+newNavElement.href = "#";
+newNavElement.style.color = "pink";
+nav.append(newNavElement);
+
+const newNavElement2 = document.createElement("a");
+newNavElement2.textContent = "Other";
+newNavElement2.href = "#";
+newNavElement2.style.color = "pink";
+nav.prepend(newNavElement2);
+
+//Update the CTA content
+const ctaItems = document.querySelector('.cta-text');
+ctaItems.textContent = siteContent.cta["h1"];
