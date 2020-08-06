@@ -129,3 +129,6 @@ contactAbout[1].textContent = siteContent["contact"]["phone"];
 contactAbout[2].textContent = siteContent["contact"]["email"];
 
 //Update the Footer
+const footerAbout = document.querySelectorAll("footer p");
+footerAbout[0].textContent = siteContent["footer"]["copyright"];
+
