@@ -80,3 +80,52 @@ ctaButton.textContent = siteContent.cta["button"];
 const ctaImg = document.querySelector('cta-img');
 ctaImg.src = siteContent.cta["img-src"];
 ctaImg.alt = "Code Snippet Image";
+
+
+//Update the Main-Content Features area
+const txtFeatures = document.querySelectorAll(".main-content .top-content h4");
+txtFeatures[0].textContent = siteContent["main-content"]["features-h4"];
+
+const paraFeatures = document.querySelectorAll(".main-content .top-content p");
+paraFeatures[0].textContent = siteContent["main-content"]["features-content"];
+
+const topAbout = document.querySelectorAll(".main-content .top-content h4");
+topAbout[1].textContent = siteContent["main-content"]["about-h4"];
+
+const topFeatures = document.querySelectorAll(".main-content .top-content p");
+topFeatures[1].textContent = siteContent["main-content"]["about-content"];
+
+//Update the middle image section
+const midImage = document.getElementById("middle-img");
+midImage.src = siteContent["main-content"]["middle-img-src"];
+midImage.alt = "Shows a mid-page accent photo";
+
+//Update the bottom content
+const bottomServicesHeader = document.querySelectorAll(".main-content .bottom-content h4");
+bottomServicesHeader[0].textContent = siteContent["main-content"]["services-h4"];
+
+const bottomServicesText = document.querySelectorAll(".main-content .bottom-content p");
+bottomServicesText[0].textContent = siteContent["main-content"]["services-content"];
+
+const bottomProdHeader = document.querySelectorAll(".main-content .bottom-content h4");
+bottomProdHeader[1].textContent = siteContent["main-content"]["product-h4"];
+
+const bottomProdText = document.querySelectorAll(".main-content .bottom-content p");
+bottomProdText[1].textContent = siteContent["main-content"]["product-content"];
+
+const bottomVisHeader = document.querySelector(".main-content .bottom-content h4");
+bottomVisHeader[2].textContent = siteContent["main-content"]["vision-h4"];
+
+const bottomVisText = document.querySelectorAll(".main-content .bottom-content p");
+bottomVisText[2].textContent = siteContent["main-content"]["vision-content"];
+
+//Update the Contact Section
+const contactHeader = document.querySelectorAll(".contact h4");
+contactHeader[0].textContent = siteContent["contact"]["contact-h4"];
+
+const contactAbout = document.querySelectorAll(".contact p");
+contactAbout[0].textContent = siteContent["contact"]["address"];
+contactAbout[1].textContent = siteContent["contact"]["phone"];
+contactAbout[2].textContent = siteContent["contact"]["email"];
+
+//Update the Footer
