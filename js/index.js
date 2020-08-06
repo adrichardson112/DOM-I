@@ -51,9 +51,8 @@ navItems[4].textContent = siteContent.nav["nav-item-5"];
 navItems[5].textContent = siteContent.nav["nav-item-6"];
 
 //Add two new elements to nav and change color
-constnavTitles = document.querySelectorAll("header nav a");
-navTitles.forEach((a) => {
-  value.style.color = 'green';
+navItems.forEach(function (currentValue) {
+  currentValue.style.color = "green";
 });
 
 const nav = document.querySelector("nav");
@@ -62,7 +61,7 @@ const newNavElement = document.createElement("a");
 newNavElement.textContent = "Samples";
 newNavElement.href = "#";
 newNavElement.style.color = "pink";
-nav.append(newNavElement);
+nav.appendChild(newNavElement);
 
 const newNavElement2 = document.createElement("a");
 newNavElement2.textContent = "Other";
@@ -71,13 +70,13 @@ newNavElement2.style.color = "pink";
 nav.prepend(newNavElement2);
 
 //Update the CTA content
-const ctaItems = document.querySelector('.cta-text');
+const ctaItems = document.querySelector('.cta h1');
 ctaItems.textContent = siteContent.cta["h1"];
 
 const ctaButton = document.querySelector('.cta button');
 ctaButton.textContent = siteContent.cta["button"];
 
-const ctaImg = document.querySelector('cta-img');
+const ctaImg = document.getElementById('cta-img');
 ctaImg.src = siteContent.cta["img-src"];
 ctaImg.alt = "Code Snippet Image";
 
